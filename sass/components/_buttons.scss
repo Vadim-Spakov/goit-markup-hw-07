@@ -20,7 +20,7 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter__button {
+.buttons__form {
   @extend %button;
   color: $title-text-color;
   background: $background-blue-color;
@@ -32,17 +32,24 @@
   transition-timing-function: $cubic-bezier;
 }
 
-.portfolio__buttons {
+.section-buttons {
   padding-top: 94px;
   padding-bottom: 50px;
 }
 
-.buttons__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+.buttons {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
 
-.buttons__item:not(:last-child) {
-  margin-right: 8px;
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__title:not(:last-child) {
+    margin-right: 8px;
+  }
 }

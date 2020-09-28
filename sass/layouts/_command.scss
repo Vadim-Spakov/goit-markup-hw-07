@@ -1,5 +1,7 @@
 .command {
   background-color: $background-blue-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   &__title {
     display: flex;
@@ -22,7 +24,7 @@
 }
 
 .name {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-family: Roboto;
   font-style: normal;
   text-align: center;

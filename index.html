@@ -75,6 +75,92 @@
           <button class="button hero__button" data-modal-open>
             Заказать услугу
           </button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" class="button__modal" data-modal-close
+                ><svg class="icon-close">
+                  <use href="./icon/symbol-defs.svg#icon-close-black"></use>
+                </svg> </button
+              ><div class="modal__list">
+                <p class="modal__text"
+                  >Оставьте свои данные, мы вам перезвоним</p
+                >
+
+                <form class="modal__form">
+                  <div class="modal__services--field">
+                    <label for="name" class="modal__name">Имя</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="modal__form--input"
+                    />
+                    <svg class="modal__icon">
+                      <use
+                        href="./icon/symbol-defs.svg#icon-person-black"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="modal__services--field">
+                    <label for="tel" class="modal__name">Телефон</label>
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      class="modal__form--input"
+                    /><svg class="modal__icon">
+                      <use href="./icon/symbol-defs.svg#icon-phone-black"></use>
+                    </svg>
+                  </div>
+                  <div class="modal__services--field">
+                    <label for="mail" class="modal__name">Почта</label>
+                    <input
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      class="modal__form--input"
+                    /><svg class="modal__icon">
+                      <use href="./icon/symbol-defs.svg#icon-email-black"></use>
+                    </svg>
+                  </div>
+
+                  <div class="modal__services--field">
+                    <label for="comments" class="modal__name"
+                      >Комментарий</label
+                    >
+                    <textarea
+                      class="comment__text"
+                      name="comment"
+                      id="comments"
+                      cols="30"
+                      rows="10"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </div>
+
+                  <div class="modal__services--field checkbox">
+                    <input
+                      id="agreement"
+                      name="agreement"
+                      type="checkbox"
+                      value="agreement"
+                    />
+                    <label for="agreement"
+                      >Соглашаюсь с рассылкой и принимаю
+                      <a class="modal__link" href="">
+                        Условия договора</a
+                      ></label
+                    ></div
+                  >
+
+                  <button type="button" class="modal__title--button"
+                    >Отправить</button
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -115,7 +201,7 @@
         </div>
       </section>
 
-      <section class="section our-work">
+      <section class="our-work">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
 
@@ -486,14 +572,14 @@
             >Web<span class="colortextwhite">Studio</span></a
           >
           <address class="address__name">
-            г. Киев, пр-т Леси Украинки, 26 <br />
+            г. Киев, пр-т Леси Украинки, 26
             <ul class="mail__list list">
-              <li class="mailtel__list"
+              <li class="mailtel-list"
                 ><a href="mailto:info@example.com" class="mailtel"
                   >info@example.com</a
                 ><br
               /></li>
-              <li class="mailtel__list"
+              <li class="mailtel-list"
                 ><a href="tel:+380991111111" class="mailtel"
                   >+38 099 111 11 11</a
                 ><br
@@ -506,7 +592,7 @@
           <ul class="subscribe__list list">
             <li class="subscribe__item">
               <a
-                class="iink__command"
+                class="link__command"
                 href="https://www.instagram.com/"
                 aria-label="Ссылка на Instagram"
               >
@@ -517,7 +603,7 @@
             </li>
             <li class="subscribe__item">
               <a
-                class="iink__command"
+                class="link__command"
                 href="https://twitter.com/"
                 aria-label="Ссылка на Twitter"
               >
@@ -528,7 +614,7 @@
             </li>
             <li class="subscribe__item">
               <a
-                class="iink__command"
+                class="link__command"
                 href="https://facebook.com/"
                 aria-label="Ссылка на Facebook"
               >
@@ -539,7 +625,7 @@
             </li>
             <li class="subscribe__item">
               <a
-                class="iink__command"
+                class="link__command"
                 href="https://www.linkedin.com/"
                 aria-label="Ссылка на LinkedIn"
               >
@@ -564,90 +650,12 @@
               />
             </div>
             <div class="form__button">
-              <button type="button" class="sign__in--button">
+              <button type="button" class="sign-in-button">
                 Подписаться
                 <svg class="button__icon">
                   <use href="./icon/symbol-defs.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button type="button" class="button__modal" data-modal-close
-              ><svg class="icon-close">
-                <use href="./icon/symbol-defs.svg#icon-close-black"></use>
-              </svg> </button
-            ><div class="modal__list">
-              <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
-
-              <form class="modal__form">
-                <div class="modal__services--field">
-                  <label for="name" class="modal__name">Имя</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    class="modal__form--input"
-                  />
-                  <svg class="modal__icon">
-                    <use href="./icon/symbol-defs.svg#icon-person-black"></use>
-                  </svg>
-                </div>
-                <div class="modal__services--field">
-                  <label for="tel" class="modal__name">Телефон</label>
-                  <input
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    class="modal__form--input"
-                  /><svg class="modal__icon">
-                    <use href="./icon/symbol-defs.svg#icon-phone-black"></use>
-                  </svg>
-                </div>
-                <div class="modal__services--field">
-                  <label for="mail" class="modal__name">Почта</label>
-                  <input
-                    type="email"
-                    name="mail"
-                    id="mail"
-                    class="modal__form--input"
-                  /><svg class="modal__icon">
-                    <use href="./icon/symbol-defs.svg#icon-email-black"></use>
-                  </svg>
-                </div>
-
-                <div class="modal__services--field">
-                  <label for="comments" class="modal__name">Комментарий</label>
-                  <textarea
-                    class="comment__text"
-                    name="comment"
-                    id="comments"
-                    cols="30"
-                    rows="10"
-                    placeholder="Введите текст"
-                  ></textarea>
-                </div>
-
-                <div class="modal__services--field checkbox">
-                  <input
-                    id="agreement"
-                    name="agreement"
-                    type="checkbox"
-                    value="agreement"
-                  />
-                  <label for="agreement"
-                    >Соглашаюсь с рассылкой и принимаю
-                    <a class="modal__link" href=""> Условия договора</a></label
-                  ></div
-                >
-
-                <button type="button" class="modal__title--button"
-                  >Отправить</button
-                >
-              </form>
             </div>
           </div>
         </div>

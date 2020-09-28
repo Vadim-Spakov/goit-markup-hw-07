@@ -56,8 +56,8 @@
     transition-timing-function: $cubic-bezier;
   }
 
-  &__mail:hover,
-  &__mail:focus {
+  &__mail:hover svg,
+  &__mail:focus svg {
     fill: $accent-color;
   }
 
@@ -81,10 +81,5 @@
     height: 12px;
     margin-right: 10px;
     fill: $primaru-text-color;
-  }
-
-  &__item:hover,
-  &__item:focus {
-    fill: $accent-color;
   }
 }
