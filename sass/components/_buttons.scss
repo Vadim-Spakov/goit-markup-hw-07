@@ -21,6 +21,14 @@
 }
 
 .buttons__form {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
   @extend %button;
   color: $title-text-color;
   background: $background-blue-color;

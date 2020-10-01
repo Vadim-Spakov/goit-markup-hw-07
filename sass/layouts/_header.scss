@@ -1,8 +1,11 @@
+.line {
+  border-bottom: 1px solid #ececec;
+}
+
 .header {
   display: flex;
   align-items: center;
   margin-left: auto;
-  border-bottom: 1px solid #ececec;
 }
 
 .site-nav {

@@ -238,6 +238,10 @@ a {
   padding-bottom: 94px;
 }
 
+.line {
+  border-bottom: 1px solid #ececec;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,7 +250,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
-  border-bottom: 1px solid #ececec;
 }
 
 .site-nav {
@@ -405,6 +408,13 @@ a {
 }
 
 .buttons__form {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: #212121;
   background: #f5f4fa;
   padding: 6px 22px;
@@ -1067,6 +1077,12 @@ address {
 }
 
 .portfolio__heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 4px;
